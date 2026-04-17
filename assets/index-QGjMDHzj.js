@@ -61364,7 +61364,8 @@ ${h(e)}
                     totalInviteAdmin: l,
                     totalInviteClinic: u,
                     totalVaccines: a.length,
-                    totalClinics: d
+                    totalClinics: d,
+                    totalActiveClinicOwners: e.ownerClinics.size()
                 };
             }).pipe(NMe({
                 bufferSize: 1,
@@ -68511,13 +68512,13 @@ ${h(e)}
             ]
         });
     }, P7 = ({ vaxApi: e })=>{
-        let [t, n] = (0, F.useState)(0n), [r, i] = (0, F.useState)(0n), [a, o] = (0, F.useState)(0n), [s, c] = (0, F.useState)(0), [l, u] = (0, F.useState)(0);
+        let [t, n] = (0, F.useState)(0n), [r, i] = (0, F.useState)(0n), [a, o] = (0, F.useState)(0n), [s, c] = (0, F.useState)(0), [l, u] = (0, F.useState)(0), [d, f] = (0, F.useState)(0n);
         return (0, F.useEffect)(()=>{
             let t;
             async function r() {
                 try {
                     t = e.state$.subscribe((e)=>{
-                        n(e.totalAdmin), i(e.totalInviteAdmin), o(e.totalInviteClinic), c(e.totalClinics), u(e.totalVaccines);
+                        n(e.totalAdmin), i(e.totalInviteAdmin), o(e.totalInviteClinic), c(e.totalClinics), u(e.totalVaccines), f(e.totalActiveClinicOwners);
                     });
                 } catch (e) {
                     console.error(`Failed to join contract:`, e);
@@ -68604,6 +68605,31 @@ ${h(e)}
                                     (0, b.jsx)(`h2`, {
                                         className: `text-3xl font-bold tracking-tight`,
                                         children: s
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    (0, b.jsxs)(`div`, {
+                        className: `bg-surface-container-low rounded-xl p-6 flex flex-col justify-between hover:bg-surface-container-high transition-colors shadow-sm`,
+                        children: [
+                            (0, b.jsx)(`div`, {
+                                className: `p-3 w-fit rounded-lg bg-primary/10 text-primary`,
+                                children: (0, b.jsx)(`span`, {
+                                    className: `material-symbols-outlined`,
+                                    children: `group`
+                                })
+                            }),
+                            (0, b.jsxs)(`div`, {
+                                className: `mt-4`,
+                                children: [
+                                    (0, b.jsx)(`p`, {
+                                        className: `text-on-surface-variant font-medium text-sm`,
+                                        children: `Active Clinic Owners`
+                                    }),
+                                    (0, b.jsx)(`h2`, {
+                                        className: `text-3xl font-bold tracking-tight`,
+                                        children: d.toString()
                                     })
                                 ]
                             })
