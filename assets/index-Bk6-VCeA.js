@@ -13771,7 +13771,7 @@ perfecta armonía.`,
                 registerInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`registerInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 30 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 30 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 31 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 31 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13797,7 +13797,7 @@ perfecta armonía.`,
                 acceptInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`acceptInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 35 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 35 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 37 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 37 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13823,7 +13823,7 @@ perfecta armonía.`,
                 registerInviteClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`registerInviteClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteClinic`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 49 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 49 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteClinic`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 51 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 51 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13849,7 +13849,7 @@ perfecta armonía.`,
                 acceptInviteClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`acceptInviteClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteClinic`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 54 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 54 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteClinic`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 57 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 57 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13875,7 +13875,7 @@ perfecta armonía.`,
                 revokeAdmin: (...e)=>{
                     if (e.length !== 1) throw new S(`revokeAdmin: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 67 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 71 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: pc()
@@ -14122,7 +14122,7 @@ perfecta armonía.`,
             if (!(`initialZswapLocalState` in t)) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript)`);
             if (typeof t.initialZswapLocalState != `object`) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript) to be an object`);
             let n = new on, r = N.newArray();
-            r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), n.data = new $t(r), n.setOperation(`registerInviteAdmin`, new rn), n.setOperation(`acceptInviteAdmin`, new rn), n.setOperation(`registerInviteClinic`, new rn), n.setOperation(`acceptInviteClinic`, new rn), n.setOperation(`revokeAdmin`, new rn), n.setOperation(`addClinic`, new rn), n.setOperation(`revokeClinic`, new rn), n.setOperation(`addCertificateIssuer`, new rn), n.setOperation(`addVaccine`, new rn), n.setOperation(`delVaccine`, new rn), n.setOperation(`requestVaccineProof`, new rn), n.setOperation(`submitVaccineProof`, new rn);
+            r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), n.data = new $t(r), n.setOperation(`registerInviteAdmin`, new rn), n.setOperation(`acceptInviteAdmin`, new rn), n.setOperation(`registerInviteClinic`, new rn), n.setOperation(`acceptInviteClinic`, new rn), n.setOperation(`revokeAdmin`, new rn), n.setOperation(`addClinic`, new rn), n.setOperation(`revokeClinic`, new rn), n.setOperation(`addCertificateIssuer`, new rn), n.setOperation(`addVaccine`, new rn), n.setOperation(`delVaccine`, new rn), n.setOperation(`requestVaccineProof`, new rn), n.setOperation(`submitVaccineProof`, new rn);
             let i = fc(Ot(), t.initialZswapLocalState.coinPublicKey, n.data, t.initialPrivateState), a = {
                 input: {
                     value: [],
@@ -14308,7 +14308,10 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: N.newMap(new Sn).encode()
+                        value: N.newCell({
+                            value: R.toValue(0n),
+                            alignment: R.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -14374,10 +14377,7 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(0n),
-                            alignment: R.alignment()
-                        }).encode()
+                        value: N.newMap(new Sn).encode()
                     }
                 },
                 {
@@ -14424,7 +14424,10 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: N.newMap(new Sn).encode()
+                        value: N.newCell({
+                            value: R.toValue(0n),
+                            alignment: R.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -14439,6 +14442,28 @@ perfecta armonía.`,
                         storage: !1,
                         value: N.newCell({
                             value: z.toValue(13n),
+                            alignment: z.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newMap(new Sn).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: z.toValue(14n),
                             alignment: z.alignment()
                         }).encode()
                     }
@@ -14509,36 +14534,6 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(10n),
-                                    alignment: z.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    addi: {
-                        immediate: parseInt(Rt({
-                            value: Il.toValue(1n),
-                            alignment: Il.alignment()
-                        }.value))
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
                                     value: z.toValue(11n),
                                     alignment: z.alignment()
                                 }
@@ -14569,7 +14564,37 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(12n),
+                                    alignment: z.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    addi: {
+                        immediate: parseInt(Rt({
+                            value: Il.toValue(1n),
+                            alignment: Il.alignment()
+                        }.value))
+                    }
+                },
+                {
+                    ins: {
+                        cached: !0,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !0,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -14633,7 +14658,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -14697,7 +14722,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -14976,7 +15001,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(7n),
+                                    value: z.toValue(8n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15270,7 +15295,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(7n),
+                                    value: z.toValue(8n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15349,7 +15374,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
+                                    value: z.toValue(2n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15604,7 +15629,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
+                                    value: z.toValue(2n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15630,7 +15655,7 @@ perfecta armonía.`,
             ]).value), `You are not a registered clinic`), [];
         }
         _registerInviteAdmin_0(e, t, n) {
-            return this._isAdmin_0(e, t), P(e, t, [
+            this._isAdmin_0(e, t), P(e, t, [
                 {
                     idx: {
                         cached: !1,
@@ -15639,7 +15664,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
+                                    value: z.toValue(4n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15673,6 +15698,61 @@ perfecta armonía.`,
                         n: 1
                     }
                 }
+            ]);
+            let r = R.fromValue(P(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: z.toValue(4n),
+                                    alignment: z.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return P(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: z.toValue(5n),
+                            alignment: z.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: R.toValue(r),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
             ]), [];
         }
         _acceptInviteAdmin_0(e, t, n) {
@@ -15690,7 +15770,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
+                                    value: z.toValue(4n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15859,7 +15939,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
+                                    value: z.toValue(4n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15901,7 +15981,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
+                                    value: z.toValue(4n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -15921,7 +16001,7 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(3n),
+                            value: z.toValue(5n),
                             alignment: z.alignment()
                         }).encode()
                     }
@@ -15944,7 +16024,7 @@ perfecta armonía.`,
             ]), [];
         }
         _registerInviteClinic_0(e, t, n) {
-            return this._isAdmin_0(e, t), P(e, t, [
+            this._isAdmin_0(e, t), P(e, t, [
                 {
                     idx: {
                         cached: !1,
@@ -15984,6 +16064,61 @@ perfecta armonía.`,
                 {
                     ins: {
                         cached: !0,
+                        n: 1
+                    }
+                }
+            ]);
+            let r = R.fromValue(P(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: z.toValue(6n),
+                                    alignment: z.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return P(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: z.toValue(7n),
+                            alignment: z.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: R.toValue(r),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
                         n: 1
                     }
                 }
@@ -16043,7 +16178,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
+                                    value: z.toValue(2n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16075,7 +16210,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
+                                    value: z.toValue(2n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16124,7 +16259,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
+                                    value: z.toValue(2n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16139,12 +16274,12 @@ perfecta armonía.`,
                     }
                 }
             ]).value);
-            return P(e, t, [
+            P(e, t, [
                 {
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(5n),
+                            value: z.toValue(7n),
                             alignment: z.alignment()
                         }).encode()
                     }
@@ -16197,6 +16332,61 @@ perfecta armonía.`,
                 {
                     ins: {
                         cached: !0,
+                        n: 1
+                    }
+                }
+            ]);
+            let o = R.fromValue(P(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: z.toValue(6n),
+                                    alignment: z.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return P(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: z.toValue(7n),
+                            alignment: z.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: R.toValue(o),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
                         n: 1
                     }
                 }
@@ -16394,7 +16584,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(10n),
+                                        value: z.toValue(11n),
                                         alignment: z.alignment()
                                     }
                                 }
@@ -16418,7 +16608,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(10n),
+                                    value: z.toValue(11n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16491,7 +16681,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(11n),
+                                        value: z.toValue(12n),
                                         alignment: z.alignment()
                                     }
                                 }
@@ -16515,7 +16705,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(11n),
+                                    value: z.toValue(12n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16553,7 +16743,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(7n),
+                                    value: z.toValue(8n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16585,7 +16775,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(7n),
+                                    value: z.toValue(8n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16633,7 +16823,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
+                                    value: z.toValue(2n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16684,7 +16874,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(7n),
+                                    value: z.toValue(8n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16716,7 +16906,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(7n),
+                                    value: z.toValue(8n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16762,7 +16952,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
+                                    value: z.toValue(10n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16794,7 +16984,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
+                                    value: z.toValue(10n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16848,7 +17038,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16880,7 +17070,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16931,7 +17121,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -16963,7 +17153,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
+                                    value: z.toValue(9n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17009,7 +17199,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(12n),
+                                    value: z.toValue(13n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17041,7 +17231,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(12n),
+                                    value: z.toValue(13n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17095,7 +17285,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(12n),
+                                    value: z.toValue(13n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17132,7 +17322,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(13n),
+                                    value: z.toValue(14n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17171,7 +17361,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
+                                    value: z.toValue(10n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17209,7 +17399,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(12n),
+                                    value: z.toValue(13n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17251,7 +17441,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
+                                    value: z.toValue(10n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17293,7 +17483,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(13n),
+                                    value: z.toValue(14n),
                                     alignment: z.alignment()
                                 }
                             }
@@ -17383,7 +17573,7 @@ perfecta armonía.`,
                     }
                 ]).value);
             },
-            get totalInviteAdmin () {
+            get totalOwnerClinics () {
                 return R.fromValue(P(n, r, [
                     {
                         dup: {
@@ -17413,127 +17603,35 @@ perfecta armonía.`,
                     }
                 ]).value);
             },
-            ownerClinics: {
-                isEmpty (...e) {
-                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
-                    return Dl.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(4n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            push: {
-                                storage: !1,
-                                value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
-                                }).encode()
-                            }
-                        },
-                        `eq`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
+            get totalInviteAdmin () {
+                return R.fromValue(P(n, r, [
+                    {
+                        dup: {
+                            n: 0
                         }
-                    ]).value);
-                },
-                size (...e) {
-                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(4n),
-                                            alignment: z.alignment()
-                                        }
+                    },
+                    {
+                        idx: {
+                            cached: !1,
+                            pushPath: !1,
+                            path: [
+                                {
+                                    tag: `value`,
+                                    value: {
+                                        value: z.toValue(5n),
+                                        alignment: z.alignment()
                                     }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
+                                }
+                            ]
                         }
-                    ]).value);
-                },
-                member (...e) {
-                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `Invites.compact line 9 char 1`, `Bytes<32>`, t), Dl.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(4n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            push: {
-                                storage: !1,
-                                value: N.newCell({
-                                    value: I.toValue(t),
-                                    alignment: I.alignment()
-                                }).encode()
-                            }
-                        },
-                        `member`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
+                    },
+                    {
+                        popeq: {
+                            cached: !1,
+                            result: void 0
                         }
-                    ]).value);
-                },
-                [Symbol.iterator] (...e) {
-                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    return t.asArray()[4].asMap().keys().map((e)=>I.fromValue(e.value))[Symbol.iterator]();
-                }
+                    }
+                ]).value);
             },
             get totalInviteClinic () {
                 return R.fromValue(P(n, r, [
@@ -17550,7 +17648,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(5n),
+                                        value: z.toValue(7n),
                                         alignment: z.alignment()
                                     }
                                 }
@@ -17582,7 +17680,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(7n),
+                                            value: z.toValue(8n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17624,7 +17722,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(7n),
+                                            value: z.toValue(8n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17657,7 +17755,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(7n),
+                                            value: z.toValue(8n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17699,7 +17797,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(7n),
+                                            value: z.toValue(8n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17731,7 +17829,7 @@ perfecta armonía.`,
                 },
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[7];
+                    let n = t.asArray()[8];
                     return n.asMap().keys().map((e)=>{
                         let t = n.asMap().get(e).asCell();
                         return [
@@ -17758,7 +17856,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
+                                            value: z.toValue(9n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17800,7 +17898,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
+                                            value: z.toValue(9n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17833,7 +17931,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
+                                            value: z.toValue(9n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17860,7 +17958,7 @@ perfecta armonía.`,
                 },
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    return t.asArray()[8].asMap().keys().map((e)=>wl.fromValue(e.value))[Symbol.iterator]();
+                    return t.asArray()[9].asMap().keys().map((e)=>wl.fromValue(e.value))[Symbol.iterator]();
                 }
             },
             issuers: {
@@ -17880,7 +17978,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
+                                            value: z.toValue(10n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17922,7 +18020,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
+                                            value: z.toValue(10n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17955,7 +18053,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
+                                            value: z.toValue(10n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -17997,7 +18095,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
+                                            value: z.toValue(10n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -18029,7 +18127,7 @@ perfecta armonía.`,
                 },
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[9];
+                    let n = t.asArray()[10];
                     return n.asMap().keys().map((e)=>{
                         let t = n.asMap().get(e).asCell();
                         return [
@@ -18054,7 +18152,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(10n),
+                                        value: z.toValue(11n),
                                         alignment: z.alignment()
                                     }
                                 }
@@ -18084,7 +18182,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(11n),
+                                        value: z.toValue(12n),
                                         alignment: z.alignment()
                                     }
                                 }
@@ -18116,7 +18214,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(12n),
+                                            value: z.toValue(13n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -18158,7 +18256,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(12n),
+                                            value: z.toValue(13n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -18191,7 +18289,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(12n),
+                                            value: z.toValue(13n),
                                             alignment: z.alignment()
                                         }
                                     }
@@ -18220,182 +18318,6 @@ perfecta armonía.`,
                     if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
                     return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 27 char 1`, `Bytes<32>`, t), El.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(12n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(t),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            popeq: {
-                                cached: !1,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                [Symbol.iterator] (...e) {
-                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[12];
-                    return n.asMap().keys().map((e)=>{
-                        let t = n.asMap().get(e).asCell();
-                        return [
-                            I.fromValue(e.value),
-                            El.fromValue(t.value)
-                        ];
-                    })[Symbol.iterator]();
-                }
-            },
-            vaccineProofs: {
-                isEmpty (...e) {
-                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
-                    return Dl.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            push: {
-                                storage: !1,
-                                value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
-                                }).encode()
-                            }
-                        },
-                        `eq`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                size (...e) {
-                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                member (...e) {
-                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 30 char 1`, `Bytes<32>`, t), Dl.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            push: {
-                                storage: !1,
-                                value: N.newCell({
-                                    value: I.toValue(t),
-                                    alignment: I.alignment()
-                                }).encode()
-                            }
-                        },
-                        `member`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                lookup (...e) {
-                    if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 30 char 1`, `Bytes<32>`, t), jl.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -18442,6 +18364,182 @@ perfecta armonía.`,
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
                     let n = t.asArray()[13];
+                    return n.asMap().keys().map((e)=>{
+                        let t = n.asMap().get(e).asCell();
+                        return [
+                            I.fromValue(e.value),
+                            El.fromValue(t.value)
+                        ];
+                    })[Symbol.iterator]();
+                }
+            },
+            vaccineProofs: {
+                isEmpty (...e) {
+                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
+                    return Dl.fromValue(P(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: z.toValue(14n),
+                                            alignment: z.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        `size`,
+                        {
+                            push: {
+                                storage: !1,
+                                value: N.newCell({
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
+                                }).encode()
+                            }
+                        },
+                        `eq`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                size (...e) {
+                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
+                    return R.fromValue(P(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: z.toValue(14n),
+                                            alignment: z.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        `size`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                member (...e) {
+                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
+                    let t = e[0];
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 30 char 1`, `Bytes<32>`, t), Dl.fromValue(P(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: z.toValue(14n),
+                                            alignment: z.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            push: {
+                                storage: !1,
+                                value: N.newCell({
+                                    value: I.toValue(t),
+                                    alignment: I.alignment()
+                                }).encode()
+                            }
+                        },
+                        `member`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                lookup (...e) {
+                    if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
+                    let t = e[0];
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 30 char 1`, `Bytes<32>`, t), jl.fromValue(P(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: z.toValue(14n),
+                                            alignment: z.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(t),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            popeq: {
+                                cached: !1,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                [Symbol.iterator] (...e) {
+                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
+                    let n = t.asArray()[14];
                     return n.asMap().keys().map((e)=>{
                         let t = n.asMap().get(e).asCell();
                         return [
@@ -61691,7 +61789,7 @@ ${h(e)}
                     validUntil: n.validUntil,
                     submitted: e.vaccineProofs.member(t)
                 });
-                let c = e.totalAdmin, l = e.totalInviteAdmin, u = e.totalInviteClinic, d = i.length;
+                let c = e.totalAdmin, l = e.totalInviteAdmin, u = e.totalInviteClinic, d = e.totalOwnerClinics, f = i.length;
                 return {
                     clinics: i,
                     vaccines: a,
@@ -61701,8 +61799,8 @@ ${h(e)}
                     totalInviteAdmin: l,
                     totalInviteClinic: u,
                     totalVaccines: a.length,
-                    totalClinics: d,
-                    totalActiveClinicOwners: e.ownerClinics.size()
+                    totalClinics: f,
+                    totalActiveClinicOwners: d
                 };
             }).pipe(PMe({
                 bufferSize: 1,

@@ -132,13 +132,8 @@ export type Circuits<PS> = {
 
 export type Ledger = {
   readonly totalAdmin: bigint;
+  readonly totalOwnerClinics: bigint;
   readonly totalInviteAdmin: bigint;
-  ownerClinics: {
-    isEmpty(): boolean;
-    size(): bigint;
-    member(elem_0: Uint8Array): boolean;
-    [Symbol.iterator](): Iterator<Uint8Array>
-  };
   readonly totalInviteClinic: bigint;
   clinics: {
     isEmpty(): boolean;
