@@ -68274,7 +68274,7 @@ ${h(e)}
         return M7.randomUUID && !t && !e ? M7.randomUUID() : vPe(e, t, n);
     }
     var yPe = ({ vaxApi: e })=>{
-        let { t } = dl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(null), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null);
+        let { t } = dl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(!1), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(null), [m, h] = (0, F.useState)(null), [g, _] = (0, F.useState)(!1);
         return (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
@@ -68313,12 +68313,12 @@ ${h(e)}
                         (0, b.jsxs)(`form`, {
                             onSubmit: async (t)=>{
                                 if (t.preventDefault(), e) {
-                                    r(!0), a(null), l(``);
+                                    r(!0), s(null), p(``);
                                     try {
                                         let t = N7(), n = await e.registerInviteAdmin(t);
-                                        console.log(`txData`, n), l(pl + `/#/invite?role=admin&code=` + t);
+                                        console.log(`txData`, n), p(pl + `/#/invite?role=admin&code=` + t);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? s(`Erro ao criar um novo convite: ` + e.message) : s(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
                                         r(!1);
                                     }
@@ -68352,11 +68352,11 @@ ${h(e)}
                                         ]
                                     })
                                 }),
-                                i && (0, b.jsx)(`p`, {
+                                o && (0, b.jsx)(`p`, {
                                     className: `text-error text-sm mt-3 px-1`,
-                                    children: i
+                                    children: o
                                 }),
-                                c && (0, b.jsxs)(`div`, {
+                                f && (0, b.jsxs)(`div`, {
                                     className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
                                     children: [
                                         (0, b.jsxs)(`div`, {
@@ -68384,13 +68384,13 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsx)(`code`, {
                                                     className: `text-xs font-mono text-green-900 break-all select-all flex-1`,
-                                                    children: c
+                                                    children: f
                                                 }),
                                                 (0, b.jsx)(`button`, {
                                                     type: `button`,
                                                     title: `Copy address`,
                                                     className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
-                                                    onClick: ()=>navigator.clipboard.writeText(c),
+                                                    onClick: ()=>navigator.clipboard.writeText(f),
                                                     children: (0, b.jsx)(`span`, {
                                                         className: `material-symbols-outlined text-green-600 text-base`,
                                                         children: `content_copy`
@@ -68418,12 +68418,12 @@ ${h(e)}
                         (0, b.jsxs)(`form`, {
                             onSubmit: async (t)=>{
                                 if (t.preventDefault(), e) {
-                                    r(!0), s(null), d(``);
+                                    r(!0), l(null), h(``);
                                     try {
                                         let t = N7(), n = await e.registerInviteAdmin(t);
-                                        console.log(`txData`, n), d(pl + `/#/invite?role=clinic&code=` + t);
+                                        console.log(`txData`, n), h(pl + `/#/invite?role=clinic&code=` + t);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? s(`Erro ao criar um novo convite: ` + e.message) : s(`Erro ao criar um novo convite: ` + String(e));
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao criar um novo convite: ` + e.message) : l(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
                                         r(!1);
                                     }
@@ -68457,11 +68457,11 @@ ${h(e)}
                                         ]
                                     })
                                 }),
-                                o && (0, b.jsx)(`p`, {
+                                c && (0, b.jsx)(`p`, {
                                     className: `text-error text-sm mt-3 px-1`,
-                                    children: o
+                                    children: c
                                 }),
-                                u && (0, b.jsxs)(`div`, {
+                                m && (0, b.jsxs)(`div`, {
                                     className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
                                     children: [
                                         (0, b.jsxs)(`div`, {
@@ -68489,13 +68489,13 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsx)(`code`, {
                                                     className: `text-xs font-mono text-green-900 break-all select-all flex-1`,
-                                                    children: u
+                                                    children: m
                                                 }),
                                                 (0, b.jsx)(`button`, {
                                                     type: `button`,
                                                     title: `Copy address`,
                                                     className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
-                                                    onClick: ()=>navigator.clipboard.writeText(u),
+                                                    onClick: ()=>navigator.clipboard.writeText(m),
                                                     children: (0, b.jsx)(`span`, {
                                                         className: `material-symbols-outlined text-green-600 text-base`,
                                                         children: `content_copy`
@@ -68504,6 +68504,81 @@ ${h(e)}
                                             ]
                                         })
                                     ]
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                (0, b.jsxs)(`div`, {
+                    className: `bg-white p-8 rounded-xl shadow-sm border border-red-100 mb-12 text-left`,
+                    children: [
+                        (0, b.jsx)(`h3`, {
+                            className: `text-lg font-semibold text-red-600 mb-4`,
+                            children: `Remover meu acesso de admin`
+                        }),
+                        (0, b.jsx)(`p`, {
+                            className: `text-on-surface-variant text-sm mb-4`,
+                            children: `Remova suas permissoes de admin da blockchain. Esta acao nao pode ser desfeita.`
+                        }),
+                        (0, b.jsxs)(`div`, {
+                            className: `flex flex-col gap-4`,
+                            children: [
+                                (0, b.jsx)(`button`, {
+                                    className: `px-8 py-4 bg-red-600 text-white font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
+                                    type: `button`,
+                                    onClick: async ()=>{
+                                        if (e) {
+                                            a(!0), d(null), _(!1);
+                                            try {
+                                                await e.revokeAdmin(), _(!0);
+                                            } catch (e) {
+                                                console.error(`Failed to remove admin:`, e), e instanceof Error ? d(`Erro ao remover admin: ` + e.message) : d(`Erro ao remover admin: ` + String(e));
+                                            } finally{
+                                                a(!1);
+                                            }
+                                        }
+                                    },
+                                    disabled: i,
+                                    children: i ? (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin`,
+                                                children: `sync`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.loading
+                                            })
+                                        ]
+                                    }) : (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `delete_forever`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: `Remover meu acesso de admin`
+                                            })
+                                        ]
+                                    })
+                                }),
+                                u && (0, b.jsx)(`p`, {
+                                    className: `text-error text-sm mt-3 px-1`,
+                                    children: u
+                                }),
+                                g && (0, b.jsx)(`div`, {
+                                    className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
+                                    children: (0, b.jsxs)(`div`, {
+                                        className: `flex items-center gap-2 text-green-700 font-bold`,
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `check_circle`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: `Admin acesso removido com sucesso!`
+                                            })
+                                        ]
+                                    })
                                 })
                             ]
                         })
