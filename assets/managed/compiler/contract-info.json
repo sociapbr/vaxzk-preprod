@@ -102,44 +102,6 @@
       }
     },
     {
-      "name": "registerInviteClinic",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "inviteCode",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
-      "name": "acceptInviteClinic",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "inviteCode",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
       "name": "revokeAdmin",
       "pure": false,
       "proof": true,
