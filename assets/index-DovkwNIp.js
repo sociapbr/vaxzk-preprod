@@ -68897,6 +68897,7 @@ ${h(e)}
                                 children: (0, b.jsx)(`div`, {
                                     className: `p-3 rounded-lg bg-primary/10 text-primary`,
                                     children: (0, b.jsx)(`span`, {
+                                        translate: `no`,
                                         className: `material-symbols-outlined text-3xl`,
                                         children: `vaccines`
                                     })
@@ -68927,6 +68928,7 @@ ${h(e)}
                                 (0, b.jsx)(`div`, {
                                     className: `p-3 w-fit rounded-lg bg-secondary/10 text-secondary`,
                                     children: (0, b.jsx)(`span`, {
+                                        translate: `no`,
                                         className: `material-symbols-outlined`,
                                         children: `admin_panel_settings`
                                     })
@@ -68950,8 +68952,35 @@ ${h(e)}
                             className: `bg-surface-container-low rounded-xl p-6 flex flex-col justify-between hover:bg-surface-container-high transition-colors shadow-sm`,
                             children: [
                                 (0, b.jsx)(`div`, {
+                                    className: `p-3 w-fit rounded-lg bg-primary/10 text-primary`,
+                                    children: (0, b.jsx)(`span`, {
+                                        translate: `no`,
+                                        className: `material-symbols-outlined`,
+                                        children: `group`
+                                    })
+                                }),
+                                (0, b.jsxs)(`div`, {
+                                    className: `mt-4`,
+                                    children: [
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-on-surface-variant font-medium text-sm`,
+                                            children: `Active Clinic Owners`
+                                        }),
+                                        (0, b.jsx)(`h2`, {
+                                            className: `text-3xl font-bold tracking-tight`,
+                                            children: d
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        (0, b.jsxs)(`div`, {
+                            className: `bg-surface-container-low rounded-xl p-6 flex flex-col justify-between hover:bg-surface-container-high transition-colors shadow-sm`,
+                            children: [
+                                (0, b.jsx)(`div`, {
                                     className: `p-3 w-fit rounded-lg bg-tertiary/10 text-tertiary`,
                                     children: (0, b.jsx)(`span`, {
+                                        translate: `no`,
                                         className: `material-symbols-outlined`,
                                         children: `medical_services`
                                     })
@@ -68966,31 +68995,6 @@ ${h(e)}
                                         (0, b.jsx)(`h2`, {
                                             className: `text-3xl font-bold tracking-tight`,
                                             children: s
-                                        })
-                                    ]
-                                })
-                            ]
-                        }),
-                        (0, b.jsxs)(`div`, {
-                            className: `bg-surface-container-low rounded-xl p-6 flex flex-col justify-between hover:bg-surface-container-high transition-colors shadow-sm`,
-                            children: [
-                                (0, b.jsx)(`div`, {
-                                    className: `p-3 w-fit rounded-lg bg-primary/10 text-primary`,
-                                    children: (0, b.jsx)(`span`, {
-                                        className: `material-symbols-outlined`,
-                                        children: `group`
-                                    })
-                                }),
-                                (0, b.jsxs)(`div`, {
-                                    className: `mt-4`,
-                                    children: [
-                                        (0, b.jsx)(`p`, {
-                                            className: `text-on-surface-variant font-medium text-sm`,
-                                            children: `Active Clinic Owners`
-                                        }),
-                                        (0, b.jsx)(`h2`, {
-                                            className: `text-3xl font-bold tracking-tight`,
-                                            children: d.toString()
                                         })
                                     ]
                                 })
@@ -69940,13 +69944,9 @@ ${h(e)}
                                         children: (0, b.jsxs)(`div`, {
                                             className: `flex flex-col text-left`,
                                             children: [
-                                                (0, b.jsxs)(`span`, {
+                                                (0, b.jsx)(`span`, {
                                                     className: `text-xs font-medium text-slate-500`,
-                                                    children: [
-                                                        i.loggedInAs,
-                                                        ` `,
-                                                        a
-                                                    ]
+                                                    children: i.loggedInAs
                                                 }),
                                                 (0, b.jsxs)(`span`, {
                                                     className: `text-sm font-bold text-on-surface`,
@@ -69994,6 +69994,7 @@ ${h(e)}
                                         className: `flex items-center gap-1 px-3 py-1.5 rounded-full text-error hover:bg-error/10 transition-colors text-sm font-semibold`,
                                         children: [
                                             (0, b.jsx)(`span`, {
+                                                translate: `no`,
                                                 className: `material-symbols-outlined text-lg`,
                                                 children: `logout`
                                             }),
@@ -70079,6 +70080,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `home` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `home` ? `'FILL' 1` : void 0
@@ -70096,6 +70098,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `wallet` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `wallet` ? `'FILL' 1` : void 0
@@ -70113,6 +70116,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `listclinics` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `listclinics` ? `'FILL' 1` : void 0
@@ -70132,6 +70136,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all text-slate-400 hover:text-blue-600`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     children: `assignment_add`
                                 }),
@@ -70146,6 +70151,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `clinicprofile` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `clinicprofile` ? `'FILL' 1` : void 0
@@ -70163,6 +70169,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `metrics` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `metrics` ? `'FILL' 1` : void 0
@@ -70180,6 +70187,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `access` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `access` ? `'FILL' 1` : void 0
@@ -70197,6 +70205,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `adminvaccine` ? `'FILL' 1` : void 0
@@ -70214,6 +70223,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminclinic` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `adminclinic` ? `'FILL' 1` : void 0
@@ -70231,6 +70241,7 @@ ${h(e)}
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminissuers` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
+                                    translate: `no`,
                                     className: `material-symbols-outlined`,
                                     style: {
                                         fontVariationSettings: o === `adminissuers` ? `'FILL' 1` : void 0
@@ -72273,6 +72284,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     function Q9({ fixed: e = !1 }) {
         let { language: t, setLanguage: n } = fl();
         return (0, b.jsx)(`div`, {
+            translate: `no`,
             className: `flex items-center gap-1 bg-white/80 backdrop-blur-md rounded-full px-2 py-1 shadow-sm border border-slate-200/60 ${e ? `fixed top-3 right-4 z-[100]` : ``}`,
             children: yIe.map(({ code: e, label: r, flag: i })=>(0, b.jsxs)(`button`, {
                     onClick: ()=>n(e),
