@@ -12806,6 +12806,7 @@ perfecta armonía.`,
                                 (0, b.jsx)(`div`, {
                                     className: `relative z-10 p-6 bg-surface-container-lowest rounded-[2rem] shadow-2xl shadow-primary/5`,
                                     children: (0, b.jsx)(`span`, {
+                                        translate: `no`,
                                         className: `material-symbols-outlined text-primary text-7xl`,
                                         style: {
                                             fontVariationSettings: `'FILL' 1`
@@ -12816,6 +12817,7 @@ perfecta armonía.`,
                                 (0, b.jsx)(`div`, {
                                     className: `absolute top-0 right-0 p-3 bg-secondary-container rounded-full shadow-lg`,
                                     children: (0, b.jsx)(`span`, {
+                                        translate: `no`,
                                         className: `material-symbols-outlined text-on-secondary-container text-xl`,
                                         style: {
                                             fontVariationSettings: `'FILL' 1`
@@ -12843,6 +12845,7 @@ perfecta armonía.`,
                                             className: `flex items-start gap-3`,
                                             children: [
                                                 (0, b.jsx)(`span`, {
+                                                    translate: `no`,
                                                     className: `material-symbols-outlined text-primary mt-0.5`,
                                                     children: `verified_user`
                                                 }),
@@ -12925,6 +12928,7 @@ perfecta armonía.`,
                                 children: [
                                     t.learnMore,
                                     (0, b.jsx)(`span`, {
+                                        translate: `no`,
                                         className: `material-symbols-outlined text-sm`,
                                         children: `open_in_new`
                                     })
@@ -69264,7 +69268,7 @@ ${h(e)}
                         }),
                         (0, b.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg leading-relaxed`,
-                            children: `Register new clinics on-chain and view all currently registered clinics.`
+                            children: `Register your clinics on-chain and view all currently registered clinics.`
                         })
                     ]
                 }),
@@ -69395,6 +69399,7 @@ ${h(e)}
                                     children: a ? (0, b.jsxs)(b.Fragment, {
                                         children: [
                                             (0, b.jsx)(`span`, {
+                                                translate: `no`,
                                                 className: `material-symbols-outlined animate-spin`,
                                                 children: `sync`
                                             }),
