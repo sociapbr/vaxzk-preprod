@@ -68045,9 +68045,27 @@ ${h(e)}
                         (0, b.jsxs)(`div`, {
                             className: `space-y-4 text-left mb-12`,
                             children: [
-                                (0, b.jsx)(`h3`, {
-                                    className: `text-2xl font-bold mb-6`,
-                                    children: `Vaccine Proof Requests`
+                                (0, b.jsxs)(`div`, {
+                                    className: `flex items-center justify-between mb-6`,
+                                    children: [
+                                        (0, b.jsx)(`h3`, {
+                                            className: `text-2xl font-bold`,
+                                            children: `Vaccine Proof Requests`
+                                        }),
+                                        (0, b.jsxs)(`button`, {
+                                            onClick: ()=>{
+                                                p(null), E(!0);
+                                            },
+                                            className: `flex items-center gap-2 px-4 py-2 bg-tertiary text-on-tertiary font-semibold rounded-full shadow active:scale-95 transition-all duration-200 text-sm`,
+                                            children: [
+                                                (0, b.jsx)(`span`, {
+                                                    className: `material-symbols-outlined text-base`,
+                                                    children: `add`
+                                                }),
+                                                `New Request`
+                                            ]
+                                        })
+                                    ]
                                 }),
                                 o ? (0, b.jsxs)(`div`, {
                                     className: `flex items-center gap-3 text-on-surface-variant text-sm py-12 justify-center`,
@@ -69697,7 +69715,7 @@ ${h(e)}
             ]
         });
     }, kPe = ({ onLogout: e, walletAddress: t, connectedApi: n, vaxApi: r })=>{
-        let { t: i } = fl(), { profile: a, activeTab: o, setActiveTab: s } = Sl(), [c, l] = F.useState(null), u = (e)=>{
+        let { t: i } = fl(), { profile: a, activeTab: o, setActiveTab: s } = Sl(), c = (e)=>{
             s(e);
         };
         return (0, b.jsxs)(`div`, {
@@ -69799,9 +69817,7 @@ ${h(e)}
                             });
                         case `addvaccine`:
                             return (0, b.jsx)(k7, {
-                                connectedApi: n,
-                                triggerModal: c,
-                                onModalTriggered: ()=>l(null)
+                                connectedApi: n
                             });
                         case `clinicprofile`:
                             return (0, b.jsx)(TPe, {
@@ -69831,9 +69847,7 @@ ${h(e)}
                                     });
                                 case `clinic`:
                                     return (0, b.jsx)(k7, {
-                                        connectedApi: n,
-                                        triggerModal: c,
-                                        onModalTriggered: ()=>l(null)
+                                        connectedApi: n
                                     });
                                 default:
                                     return (0, b.jsx)(Cl, {
@@ -69846,7 +69860,7 @@ ${h(e)}
                     className: `fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-slate-50/70 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:flex`,
                     children: [
                         a == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`home`),
+                            onClick: ()=>c(`home`),
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `home` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69864,7 +69878,7 @@ ${h(e)}
                             ]
                         }),
                         a == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`wallet`),
+                            onClick: ()=>c(`wallet`),
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `wallet` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69882,7 +69896,7 @@ ${h(e)}
                             ]
                         }),
                         a == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`listclinics`),
+                            onClick: ()=>c(`listclinics`),
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `listclinics` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69900,24 +69914,25 @@ ${h(e)}
                             ]
                         }),
                         a == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>{
-                                u(`addvaccine`), l(`proofReq`);
-                            },
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all text-slate-400 hover:text-blue-600`,
+                            onClick: ()=>c(`myproofs`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `myproofs` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     translate: `no`,
                                     className: `material-symbols-outlined`,
-                                    children: `assignment_add`
+                                    style: {
+                                        fontVariationSettings: o === `myproofs` ? `'FILL' 1` : void 0
+                                    },
+                                    children: `vaccines`
                                 }),
                                 (0, b.jsx)(`span`, {
                                     className: `text-[11px] font-medium tracking-wide uppercase mt-1`,
-                                    children: `Proof Req`
+                                    children: `My Proofs`
                                 })
                             ]
                         }),
                         a == `clinic` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`addvaccine`),
+                            onClick: ()=>c(`addvaccine`),
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `addvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69935,7 +69950,7 @@ ${h(e)}
                             ]
                         }),
                         a == `clinic` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`clinicprofile`),
+                            onClick: ()=>c(`clinicprofile`),
                             className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `clinicprofile` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69953,7 +69968,7 @@ ${h(e)}
                             ]
                         }),
                         a == `admin` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`metrics`),
+                            onClick: ()=>c(`metrics`),
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `metrics` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69971,7 +69986,7 @@ ${h(e)}
                             ]
                         }),
                         a == `admin` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`access`),
+                            onClick: ()=>c(`access`),
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `access` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -69989,7 +70004,7 @@ ${h(e)}
                             ]
                         }),
                         a == `admin` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`adminvaccine`),
+                            onClick: ()=>c(`adminvaccine`),
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -70007,7 +70022,7 @@ ${h(e)}
                             ]
                         }),
                         a == `admin` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>u(`adminissuers`),
+                            onClick: ()=>c(`adminissuers`),
                             className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminissuers` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
