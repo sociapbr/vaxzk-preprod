@@ -12785,7 +12785,7 @@ perfecta armonía.`,
         });
     }, fl = ()=>(0, F.useContext)(ul), pl = `preprod`, ml = `https://preprod.vaxzk.com.br`;
     function hl() {
-        return `fa243d504a74514eba82453fc1aae2227b34c7cfab71d6b63de862bc8c19a057`;
+        return `51a783f1146d9757150e7812b8a2be15593d7337d89559f35bbefb5d7b95b713`;
     }
     var gl = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -66595,6 +66595,7 @@ ${h(e)}
     }, sPe = ({ vaxApi: e })=>{
         let { t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(``);
         (0, F.useEffect)(()=>{
+            if (!e) return;
             let t;
             async function n() {
                 try {
@@ -66608,7 +66609,9 @@ ${h(e)}
             return n(), ()=>{
                 t && t.unsubscribe();
             };
-        }, []);
+        }, [
+            e
+        ]);
         let o = (e, t)=>{
             let n = parseFloat(e), r = parseFloat(t);
             return !isNaN(n) && !isNaN(r) && n !== 0 && r !== 0;
@@ -68645,6 +68648,7 @@ ${h(e)}
     }, P7 = ({ vaxApi: e })=>{
         let [t, n] = (0, F.useState)(0n), [r, i] = (0, F.useState)(0n), [a, o] = (0, F.useState)(0n), [s, c] = (0, F.useState)(0), [l, u] = (0, F.useState)(0), [d, f] = (0, F.useState)(0n);
         return (0, F.useEffect)(()=>{
+            if (!e) return;
             let t;
             async function r() {
                 try {
@@ -68658,7 +68662,9 @@ ${h(e)}
             return r(), ()=>{
                 t && t.unsubscribe();
             };
-        }, []), (0, b.jsxs)(`main`, {
+        }, [
+            e
+        ]), (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
                 (0, b.jsx)(`section`, {
@@ -68818,6 +68824,7 @@ ${h(e)}
     }, wPe = ({ vaxApi: e })=>{
         let { t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(``), [o, s] = (0, F.useState)(!1), [c, l] = (0, F.useState)(null);
         (0, F.useEffect)(()=>{
+            if (!e) return;
             let t;
             async function n() {
                 try {
@@ -68831,7 +68838,9 @@ ${h(e)}
             return n(), ()=>{
                 t && t.unsubscribe();
             };
-        }, []);
+        }, [
+            e
+        ]);
         let u = async (t)=>{
             if (t.preventDefault(), !(!e || !i.trim())) {
                 s(!0), l(null);
@@ -69364,6 +69373,7 @@ ${h(e)}
         }), OPe = ({ vaxApi: e })=>{
         let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)(!0), [a, o] = (0, F.useState)(!1), [s, c] = (0, F.useState)(!1), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(``), [p, m] = (0, F.useState)(``), [h, g] = (0, F.useState)(``), [_, v] = (0, F.useState)(``);
         return (0, F.useEffect)(()=>{
+            if (!e) return;
             let t;
             try {
                 t = e.state$.subscribe((e)=>{
@@ -69375,7 +69385,9 @@ ${h(e)}
             return ()=>{
                 t && t.unsubscribe();
             };
-        }, []), (0, b.jsxs)(b.Fragment, {
+        }, [
+            e
+        ]), (0, b.jsxs)(b.Fragment, {
             children: [
                 (0, b.jsxs)(`main`, {
                     className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
